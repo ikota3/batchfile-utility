@@ -18,7 +18,7 @@ popd
 endlocal
 pause
 
-:GET_DIRPATH:
+:GET_DIRPATH
 set dirpath="%~dp1"
 exit /b
 

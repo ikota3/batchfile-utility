@@ -2,6 +2,11 @@
 
 rem This batch file moves image file(in subdirectory) to current directory.
 
+set /p selected=continue^? y/n^: 
+if %selected% == n (
+exit /b
+)
+
 set CURRENT="%CD%"
 
 setlocal enabledelayedexpansion

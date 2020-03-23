@@ -2,6 +2,11 @@
 
 rem This batch file rename photo (like: jpg, jpeg, png) to number.
 
+set /p selected=continue^? y/n^: 
+if %selected% == n (
+exit /b
+)
+
 setlocal enabledelayedexpansion
 set num=1
 for /f "usebackq delims=" %%n in (`dir /a /b ^| findstr /i /r "\.jpg$ \.jpeg$ \.png$"`) do (

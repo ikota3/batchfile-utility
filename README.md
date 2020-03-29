@@ -3,5 +3,5 @@
 ## ImageRenamer
     Change image filename to sequential number.
 
-## changeImagePathToCurrentDir
+## moveImageToCurrentDirectory
     Move image file to current directory.
